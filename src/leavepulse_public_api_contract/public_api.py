@@ -165,6 +165,16 @@ _OPERATIONS = (
         docs_group="projects",
     ),
     ContractOperation(
+        id="resolve-project",
+        method="get",
+        runtime_path="/v1/projects/resolve/{project_ref}",
+        sdk_name="resolveProject",
+        summary="Resolve project",
+        description="Resolve a public project id, slug, or entrypoint.",
+        auth_kind="public",
+        docs_group="projects",
+    ),
+    ContractOperation(
         id="get-project",
         method="get",
         runtime_path="/v1/projects/{project_ref}",
@@ -251,6 +261,20 @@ _OPERATIONS = (
         sdk_name="getServerLive",
         summary="Get server live status",
         description="Return the current live status snapshot for one server.",
+        auth_kind="public",
+        docs_group="servers",
+    ),
+    ContractOperation(
+        id="get-server-launch-manifest",
+        method="get",
+        runtime_path="/v1/servers/{server_ref}/launch-manifest",
+        sdk_name="getServerLaunchManifest",
+        summary="Get server launch manifest",
+        description=(
+            "Return the LeavePulse launcher manifest for a server: Minecraft "
+            "version, mod loader, mods/resourcepacks (inline or .mrpack), "
+            "JVM hints, and connection address."
+        ),
         auth_kind="public",
         docs_group="servers",
     ),
