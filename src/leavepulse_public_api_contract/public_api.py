@@ -205,16 +205,6 @@ _OPERATIONS = (
         docs_group="projects",
     ),
     ContractOperation(
-        id="list-servers",
-        method="get",
-        runtime_path="/v1/servers",
-        sdk_name="listServers",
-        summary="List servers",
-        description="List public servers through the stable developer facade.",
-        auth_kind="public",
-        docs_group="servers",
-    ),
-    ContractOperation(
         id="get-server-filter-stats",
         method="get",
         runtime_path="/v1/servers/stats",
