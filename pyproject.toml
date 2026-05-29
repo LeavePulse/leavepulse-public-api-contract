@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Code-first public API contract DSL and generators for LeavePulse"
 requires-python = "~=3.14.0"
 dependencies = [
-    "msgspec>=0.20.0,<0.21",
+    "msgspec>=0.21.0,<0.22",
 ]
 
 [dependency-groups]
